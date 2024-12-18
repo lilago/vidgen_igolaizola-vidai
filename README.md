@@ -126,6 +126,8 @@ upscale true
 watermark false
 explore true
 wait 3s
+extend 3
+debug true
 ```
 
 Using environment variables (`VIDAI` prefix, uppercase and underscores):
