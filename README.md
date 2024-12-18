@@ -1,8 +1,9 @@
-# 🎥 vidai 🤖
+# 🎞 vidai 🎦
 
-## 🎥 AI Video Generation CLI-Tool 🤖
+## 🎥 Video AI Generation CLI-Tool
+### for [RunwayML](https://runwayml.com/) including simple edit features to extend & loop using ffmpeg. 🤖
 
-### for [RunwayML](https://runwayml.com/) including simple edit features to extend & loop using ffmpeg.
+---
 
 ### Models support:
 - [x]  Gen2
