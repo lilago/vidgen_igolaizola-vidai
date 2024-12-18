@@ -30,6 +30,8 @@ type Config struct {
 	Watermark   bool
 	Explore     bool
 	Seconds     int
+	Portrait    bool
+	Text        string
 }
 
 // Run generates a video from an image and a text prompt.
@@ -101,13 +103,14 @@ func Run(ctx context.Context, cfg *Config) error {
 		gen, err := client.Generate(ctx, &runway.GenerateRequest{
 			Model:       cfg.Model,
 			AssetURL:    imageURL,
-			Prompt:      "",
+			Prompt:      cfg.Text,
 			Interpolate: cfg.Interpolate,
 			Upscale:     cfg.Upscale,
 			Watermark:   cfg.Watermark,
 			Extend:      false,
 			ExploreMode: cfg.Explore,
 			Seconds:     cfg.Seconds,
+			Portrait:    cfg.Portrait,
 		})
 		if err != nil {
 			return fmt.Errorf("vidai: couldn't generate video: %w", err)
