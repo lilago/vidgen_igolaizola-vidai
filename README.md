@@ -2,7 +2,7 @@
 
 ## 🎥 AI Video Generation CLI-Tool 🤖
 
-### for [RunwayML](https://runwayml.com/) with added ffmpeg edit features to extend & loop.
+### for [RunwayML](https://runwayml.com/) including simple edit features to extend & loop using ffmpeg.
 
 ### Models support:
 - [x]  Gen2
