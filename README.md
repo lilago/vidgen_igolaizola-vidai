@@ -18,7 +18,7 @@
 ## 🚀 Features
 
 - [x] Text2Video & Image2Video
-Generate videos directly from the command line using a text or image prompt.
+> Generate videos directly from the command line using a text or image prompt.
 
 - [x] Model Support
 > Support for RunwayML Gen-2, Gen3, and Gen3 Turbo models.
@@ -114,11 +114,17 @@ vidai generate --config vidai.conf
 token RUNWAYML_TOKEN
 image car.jpg
 output car.mp4
+folder cars
 model gen3-turbo
+text "8k FPV car race"
+seconds 5
+portrait true
+last-frame true
 interpolate true
 upscale true
 watermark false
 explore true
+wait 3s
 ```
 
 Using environment variables (`VIDAI` prefix, uppercase and underscores):
