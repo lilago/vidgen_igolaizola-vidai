@@ -1,20 +1,41 @@
-# vidai 📹🤖
+# 🎥 vidai 🤖
 
-**vidai** generates videos using AI.
+## 🎥 AI Video Generation CLI-Tool 🤖
 
-This is a CLI tool for [RunwayML](https://runwayml.com/) that adds some extra features on top of it.
-It now also supports Gen3 and Gen3 Turbo models!
+### for [RunwayML](https://runwayml.com/) with added ffmpeg edit features to extend & loop.
 
-> 📢 Connect with us! Join our Telegram group for support and collaboration: [t.me/igohub](https://t.me/igohub)
+### Models support:
+- [x]  Gen2
+- [x]  Gen3
+- [x]  Gen3 Turbo
+
+---
+
+> 📢 Collab with us! [Join our Telegram group](https://t.me/igohub) for contact and support.
+
+---
 
 ## 🚀 Features
 
-- Generate videos directly from the command line using a text or image prompt.
-- Support for RunwayML Gen-2, Gen3, and Gen3 Turbo models.
-- Use RunwayML's extend feature to generate longer videos.
-- Create or extend videos longer than 10 seconds by reusing the last frame of the video as the input for the next generation.
-- Other handy tools to edit videos, like generating loops.
-- Explore mode for unlimited generations (credit mode is used by default).
+- [x] Text2Video & Image2Video
+Generate videos directly from the command line using a text or image prompt.
+
+- [x] Model Support
+> Support for RunwayML Gen-2, Gen3, and Gen3 Turbo models.
+
+- [x] Extend Feature
+> Use RunwayML's extend feature to generate longer videos.
+
+- [x] Long Videos
+> Create or extend videos longer than 10 seconds by reusing the last frame of the video as the input for the next generation.
+
+- [x] Simple Editing
+> Other handy tools to edit videos, like generating loops.
+
+- [x] Explore Mode
+> Explore mode for unlimited generations (credit mode is used by default).
+
+---
 
 ## 📦 Installation
 
